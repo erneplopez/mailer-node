@@ -27,8 +27,8 @@ helpers.messageAssistantOutdatedDocuments=function() {
                             mailer.send(helpers.generateEmployeeMailOptions(assistant.firstName+" "+assistant.lastName,assistant.email,
                             superuser.email,superuser.company,outdatedDocuments),{user:superuser.email,pass:superuser.emailPass});
                         
-                            sms.send(helpers.generateSMSOptions(assistant.firstName+" "+assistant.lastName,
-                                     assistant.phone,superuser.company,outdatedDocuments));
+                            // sms.send(helpers.generateSMSOptions(assistant.firstName+" "+assistant.lastName,
+                            //          assistant.phone,superuser.company,outdatedDocuments));
                         })  
                     }
                 })
